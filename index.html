@@ -1,22 +1,30 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
 
-<head>
-  <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Noroff FED2 JS2 CA</title>
+        <script type="module" src="/src/app.js"></script>
+    </head>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Noroff FED2 JS2 CA</title>
-  <script type="module" src="/src/app.js"></script>
-</head>
+    <div class="logoDiv">
+        <img src="/images/noroff-logo.png" alt="Noroff Logo" />
+        <h1 class="pageName">Home</h1>
+    </div>
+    <body>
+        <div class="navBar">
+            <a href="/profile/">My Profile</a>
 
-<body>
-  <img src="/images/noroff-logo.png" alt="Noroff Logo" />
-
-  <h1>Home</h1>
-
-  <a href="/profile/">My Profile</a>
-  <a href="/auth/login/">Login</a>
-  <a href="/auth/register/">Register</a>
-  <button>Logout</button>
-</body>
+            <a href="/post/create/">New Post</a>
+            <a href="/auth/login/">Login</a>
+            <a href="/auth/register/">Register</a>
+            <button class="logoutBtn">Logout</button>
+        </div>
+        <div id="postContainer"></div>
+        <div id="btnDiv">
+            <button id="prevBtn">Previous page</button>
+            <button id="nextBtn">Next page</button>
+        </div>
+    </body>
 </html>

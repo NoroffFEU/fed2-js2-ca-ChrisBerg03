@@ -1,1 +1,131 @@
 @import url(_reset.css);
+
+#postContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.postCard {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.postCard:hover {
+    cursor: pointer;
+}
+
+.postCard img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.postCard .title {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.postCard .tags {
+    color: #555;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.postCard .body {
+    margin-top: 10px;
+    color: #333;
+    font-size: 1rem;
+}
+
+#postContainer .media img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+#postContainer.title {
+    font-size: 1.5em;
+    margin: 16px 0;
+}
+#postContainer .tags {
+    margin: 8px 0;
+    color: #555;
+}
+#postContainer .body {
+    font-size: 1em;
+    color: #333;
+}
+#postContainer .created {
+    font-size: 0.875em;
+    color: #999;
+    text-align: right;
+}
+
+.navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border: 1px solid #333;
+}
+
+.navBar a {
+    text-decoration: none;
+    color: #333;
+    padding: 32px 16px;
+    font-size: 1.25rem;
+}
+
+.navBar a:hover {
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.logoutBtn {
+    background: none;
+    border: solid 1px #333;
+    border-radius: 16px;
+    padding: 8px 16px;
+    font-size: 1.25rem;
+}
+
+.logoutBtn:hover {
+    background: none;
+    border: solid 2px #333;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.logoDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#btnDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    padding: 32px;
+}
+
+#btnDiv button {
+    font-size: 1.25rem;
+    background: none;
+    border: 1px solid #333;
+    padding: 8px 16px;
+    border-radius: 16px;
+}
+
+#btnDiv button:hover {
+    cursor: pointer;
+    font-weight: 600;
+}
